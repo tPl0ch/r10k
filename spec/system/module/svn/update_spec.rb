@@ -32,4 +32,8 @@ describe 'updating modules from SVN' do
       expect(command('cd modules/gitolite; svn info')).to return_stdout /Revision: 20/
     end
   end
+
+  describe 'when the installed revision is newer than the requested version' do
+    it 'downgrades the module'
+  end
 end
